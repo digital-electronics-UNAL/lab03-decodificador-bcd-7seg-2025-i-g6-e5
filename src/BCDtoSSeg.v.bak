@@ -1,11 +1,10 @@
 module BCDtoSSeg (
     input [3:0] BCD, 
-    input [3:0] c,
     output reg [0:6] SSeg, 
     output [3:0] an
   );
   
-  assign an = c;
+  assign an = 4'b1110;
 
   always @ ( * ) begin
     case (BCD)

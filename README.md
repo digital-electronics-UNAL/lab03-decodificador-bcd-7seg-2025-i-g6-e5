@@ -19,7 +19,7 @@ Indice:
 ## 1. Diseño implementado
 
 ### 2. Descripción
-
+Anodo común 
 ### 3. Diagramas
 
 
