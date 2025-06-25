@@ -9,7 +9,7 @@ module BCD_tb();
     BCD uut (
         .inp(inp), 
         .bcd(bcdw_tb),
-        .clk2(clk2)        
+        .clk2(clk2)     
     );
    
 
