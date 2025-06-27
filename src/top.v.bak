@@ -1,6 +1,10 @@
+
+`include "src/BCD.v"
+`include "src/BCDtoSSeg.v"
+
 module top (
-    input [4:0] inp,  
-    input clk,
+    input [3:0] inp,  
+    input clk2,
     input rst,
     output [0:6] SSeg, 
     output [3:0] an
@@ -8,19 +12,13 @@ module top (
 );
     wire [3:0]bcdsseg;
     wire [3:0]c;
-    wire fdividier;
 
     BCD BCD(
     .bcd(bcdsseg),
     .inp(inp),
     .rst(rst),
     .c(c),
-    .clk2(fdivider)
-    );
-
-    CF_Div fdiv(
-    .clk(clk),
-    .fdiv(fdivider)
+    .clk2(clk2)
     );
 
     BCDtoSSeg BCDtoSSeg(

@@ -1,0 +1,23 @@
+module CF_Div(
+
+    input clk,
+    output reg fdiv
+);
+
+reg [$clog2(8000000):0] counter = 0;
+
+    initial begin
+        fdiv = 1'b0;
+    end
+
+always@(posedge clk) begin
+    if (counter == 8000000) begin
+        counter <= 0;
+        fdiv <= ~fdiv;
+    end else begin
+        counter <= counter +1;
+    end
+end
+
+
+endmodule
