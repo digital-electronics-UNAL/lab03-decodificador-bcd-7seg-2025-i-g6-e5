@@ -59,7 +59,9 @@ module top_sum_res_tb();
     initial begin
         $dumpfile("top_sum_res_tb.vcd");
         $dumpvars(0, top_sum_res_tb);
-        #95 $finish;
+        #100 $finish;
     end
 
 endmodule
+
+//gtkwave: symbol lookup error: /snap/core20/current/lib/x86_64-linux-gnu/libpthread.so.0: undefined symbol: __libc_pthread_init, version GLIBC_PRIVATE
