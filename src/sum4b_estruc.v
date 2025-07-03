@@ -1,8 +1,8 @@
 `include "src/sum1b_estruc.v"
 
-module sum5b_estruc(
+module sum4b_estruc(
 
-    input [3:0] A,
+    input [3:0] A,s
     input [3:0] B,
     input Ci, 
     output Cout,

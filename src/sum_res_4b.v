@@ -14,12 +14,12 @@ module sum_res_4b(
     assign B_c = B^{4{Sel}};
     wire c0, c1, c2;
 
-    sum4b_estruc UUT (
-        .A(A),
-        .B(B_c),
-        .Ci(Sel),
-        .S(S),
-        .Cout(Cout)
+    sum4b_estruc UUT(
+            .A(A),
+            .B(B_c),
+            .Ci(Sel),
+            .S(S),
+            .Cout(Cout)
     );
 
 endmodule
