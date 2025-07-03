@@ -1,4 +1,5 @@
 `timescale 1ns/1ps
+`include "src/top_sum_res.v"
 
 module top_sum_res_tb();
     reg [3:0] A;

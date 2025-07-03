@@ -15,9 +15,9 @@ module sum_res_4b(
     wire c0, c1, c2;
 
     sum4b_estruc UUT (
-        .A(A)
-        .B(B_c)
-        .Ci(Sel)
+        .A(A),
+        .B(B_c),
+        .Ci(Sel),
         .S(S),
         .Cout(Cout)
     );
