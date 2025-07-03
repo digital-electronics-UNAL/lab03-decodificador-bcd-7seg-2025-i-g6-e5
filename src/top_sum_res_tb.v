@@ -21,7 +21,10 @@ module top_sum_res_tb();
         .an(an)
     );
 
-    always #5 clk = ~clk;
+    always begin
+        clk = ~clk;
+        #5;
+    end
 
     initial begin
 
@@ -51,6 +54,12 @@ module top_sum_res_tb();
         B = 4'd8;
         Sel = 0;
         #20;
+    end
+
+    initial begin
+        $dumpfile("top_sum_res_tb.vcd");
+        $dumpvars(0, top_sum_res_tb);
+        #95 $finish;
     end
 
 endmodule
