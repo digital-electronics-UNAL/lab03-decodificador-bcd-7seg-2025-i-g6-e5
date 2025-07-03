@@ -1,5 +1,5 @@
-`include "src/sum_res_4b.v"
-`include "src/top.v"
+//`include "src/sum_res_4b.v"
+//`include "src/top.v"
 
 module top_sum_res(
     input [3:0] A,

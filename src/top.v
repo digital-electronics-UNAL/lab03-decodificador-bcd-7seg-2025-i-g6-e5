@@ -1,6 +1,6 @@
-`include "src/BCD.v"
-`include "src/CF_Div.v"
-`include "src/BCDtoSSeg.v"
+//`include "src/BCD.v"
+//`include "src/CF_Div.v"
+//`include "src/BCDtoSSeg.v"
 
 module top (
     input [4:0] inp,  
