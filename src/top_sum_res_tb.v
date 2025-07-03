@@ -51,9 +51,6 @@ module top_sum_res_tb();
         B = 4'd8;
         Sel = 0;
         #20;
-
-        $display("Testbench finalizado.");
-        $finish;
     end
 
 endmodule
