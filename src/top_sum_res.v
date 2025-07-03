@@ -26,11 +26,11 @@ module top_sum_res(
     );
 
     top u_top (
-        .inp(inp_top)
-        .clk(clk)
-        .rst(rst)
-        .SSeg(SSeg)
+        .inp(inp_top),
+        .clk(clk),
+        .rst(rst),
+        .SSeg(SSeg),
         .an(an)
     );
-    
+
 endmodule
