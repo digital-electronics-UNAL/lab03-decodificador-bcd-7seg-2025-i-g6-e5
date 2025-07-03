@@ -6,6 +6,7 @@ module top (
     input [4:0] inp,  
     input clk,
     input rst,
+    input Sel,
     output [0:6] SSeg, 
     output [3:0] an
 
@@ -19,6 +20,7 @@ module top (
     .inp(inp),
     .rst(rst),
     .c(c),
+    .Sel(Sel),
     .clk2(fdivider)
     );
 

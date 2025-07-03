@@ -6,7 +6,7 @@ module CF_Div(
 
 // 8000000 para quartus aprox, en testbench toca poner como 10
 
-reg [$clog2(8000000):0] counter;
+reg [$clog2(10):0] counter;
 
     initial begin
         fdiv = 1'b0;
@@ -14,7 +14,7 @@ reg [$clog2(8000000):0] counter;
     end
 
 always@(posedge clk) begin
-    if (counter == 8000000) begin
+    if (counter == 10) begin
         counter <= 0;
         fdiv <= ~fdiv;
     end else begin
