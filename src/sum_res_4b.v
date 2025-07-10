@@ -1,4 +1,4 @@
-`include "src/sum4b_estruc.v"
+
 
 module sum_res_4b(
 

@@ -1,5 +1,4 @@
-`include "src/sum_res_4b.v"
-`include "src/top.v"
+
 
 module top_sum_res(
     input [3:0] A,
@@ -29,6 +28,7 @@ module top_sum_res(
         .inp(inp_top),
         .clk(clk),
         .rst(rst),
+        .Sel(Sel),
         .SSeg(SSeg),
         .an(an)
     );

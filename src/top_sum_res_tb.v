@@ -1,5 +1,12 @@
 `timescale 1ns/1ps
 `include "src/top_sum_res.v"
+`include "src/sum_res_4b.v"
+`include "src/top.v"
+`include "src/BCD.v"
+`include "src/CF_Div.v"
+`include "src/BCDtoSSeg.v"
+`include "src/sum4b_estruc.v"
+`include "src/sum1b_estruc.v"
 
 module top_sum_res_tb();
     reg [3:0] A;
@@ -37,29 +44,17 @@ module top_sum_res_tb();
 
         rst = 0;
 
-        A = 4'd3;
-        B = 4'd2;
-        Sel = 0;
-        #200;
-
-        Sel = 1;
-        #200;
-
         A = 4'd2;
         B = 4'd3;
         Sel = 1;
-        #200;
+        #500;
 
-        A = 4'd8;
-        B = 4'd8;
-        Sel = 0;
-        #200;
     end
 
     initial begin
         $dumpfile("top_sum_res_tb.vcd");
         $dumpvars(0, top_sum_res_tb);
-        #1000 $finish;
+        #10000 $finish;
     end
 
 endmodule
