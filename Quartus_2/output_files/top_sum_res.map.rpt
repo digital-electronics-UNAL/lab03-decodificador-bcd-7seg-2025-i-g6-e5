@@ -1,6 +1,6 @@
 Analysis & Synthesis report for top_sum_res
-Thu Jul  3 13:40:28 2025
-Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Sat Jul 12 22:19:26 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -27,41 +27,41 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2025  Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
-the Altera IP License Agreement, or other applicable license
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
-Altera and sold by Altera or its authorized distributors.  Please
-refer to the Altera Software License Subscription Agreements 
-on the Quartus Prime software download page.
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jul  3 13:40:28 2025           ;
-; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
-; Revision Name                      ; top_sum_res                                     ;
-; Top-level Entity Name              ; top_sum_res                                     ;
-; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 148                                             ;
-;     Total combinational functions  ; 146                                             ;
-;     Dedicated logic registers      ; 31                                              ;
-; Total registers                    ; 31                                              ;
-; Total pins                         ; 22                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
-+------------------------------------+-------------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Jul 12 22:19:26 2025          ;
+; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                      ; top_sum_res                                    ;
+; Top-level Entity Name              ; top_sum_res                                    ;
+; Family                             ; Cyclone IV E                                   ;
+; Total logic elements               ; 148                                            ;
+;     Total combinational functions  ; 146                                            ;
+;     Dedicated logic registers      ; 31                                             ;
+; Total registers                    ; 31                                             ;
+; Total pins                         ; 22                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -167,32 +167,32 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                ; Library ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
-; ../src/BCD.v                     ; yes             ; User Verilog HDL File        ; /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v                            ;         ;
-; ../src/top_sum_res.v             ; yes             ; User Verilog HDL File        ; /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top_sum_res.v                    ;         ;
-; ../src/top.v                     ; yes             ; User Verilog HDL File        ; /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top.v                            ;         ;
-; ../src/sum_res_4b.v              ; yes             ; User Verilog HDL File        ; /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum_res_4b.v                     ;         ;
-; ../src/sum4b_estruc.v            ; yes             ; User Verilog HDL File        ; /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum4b_estruc.v                   ;         ;
-; ../src/sum1b_estruc.v            ; yes             ; User Verilog HDL File        ; /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum1b_estruc.v                   ;         ;
-; ../src/CF_Div.v                  ; yes             ; User Verilog HDL File        ; /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/CF_Div.v                         ;         ;
-; ../src/BCDtoSSeg.v               ; yes             ; User Verilog HDL File        ; /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCDtoSSeg.v                      ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; /home/samuel/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/lpm_divide.tdf                                          ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; /home/samuel/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/abs_divider.inc                                         ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; /home/samuel/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/sign_div_unsign.inc                                     ;         ;
-; aglobal241.inc                   ; yes             ; Megafunction                 ; /home/samuel/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc                                          ;         ;
-; db/lpm_divide_0jm.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/lpm_divide_0jm.tdf      ;         ;
-; db/sign_div_unsign_olh.tdf       ; yes             ; Auto-Generated Megafunction  ; /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/sign_div_unsign_olh.tdf ;         ;
-; db/alt_u_div_47f.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/alt_u_div_47f.tdf       ;         ;
-; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/add_sub_7pc.tdf         ;         ;
-; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/add_sub_8pc.tdf         ;         ;
-; db/lpm_divide_j9m.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/lpm_divide_j9m.tdf      ;         ;
-; db/sign_div_unsign_8kh.tdf       ; yes             ; Auto-Generated Megafunction  ; /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/sign_div_unsign_8kh.tdf ;         ;
-; db/alt_u_div_44f.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/alt_u_div_44f.tdf       ;         ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                                  ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../src/BCD.v                     ; yes             ; User Verilog HDL File        ; C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v                            ;         ;
+; ../src/top_sum_res.v             ; yes             ; User Verilog HDL File        ; C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top_sum_res.v                    ;         ;
+; ../src/top.v                     ; yes             ; User Verilog HDL File        ; C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top.v                            ;         ;
+; ../src/sum_res_4b.v              ; yes             ; User Verilog HDL File        ; C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum_res_4b.v                     ;         ;
+; ../src/sum4b_estruc.v            ; yes             ; User Verilog HDL File        ; C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum4b_estruc.v                   ;         ;
+; ../src/sum1b_estruc.v            ; yes             ; User Verilog HDL File        ; C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum1b_estruc.v                   ;         ;
+; ../src/CF_Div.v                  ; yes             ; User Verilog HDL File        ; C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/CF_Div.v                         ;         ;
+; ../src/BCDtoSSeg.v               ; yes             ; User Verilog HDL File        ; C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCDtoSSeg.v                      ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/lpm_divide.tdf                                                                                     ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/abs_divider.inc                                                                                    ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/sign_div_unsign.inc                                                                                ;         ;
+; aglobal231.inc                   ; yes             ; Megafunction                 ; d:/quartus/quartus/libraries/megafunctions/aglobal231.inc                                                                                     ;         ;
+; db/lpm_divide_0jm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/lpm_divide_0jm.tdf      ;         ;
+; db/sign_div_unsign_olh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/sign_div_unsign_olh.tdf ;         ;
+; db/alt_u_div_47f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/alt_u_div_47f.tdf       ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/add_sub_7pc.tdf         ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/add_sub_8pc.tdf         ;         ;
+; db/lpm_divide_j9m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/lpm_divide_j9m.tdf      ;         ;
+; db/sign_div_unsign_8kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/sign_div_unsign_8kh.tdf ;         ;
+; db/alt_u_div_44f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/alt_u_div_44f.tdf       ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -287,7 +287,7 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |top_sum_res|top:u_top|BCD:BCD|bcd[2] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |top_sum_res|top:u_top|BCD:BCD|bcd[3] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
 
 
@@ -375,84 +375,84 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Thu Jul  3 13:40:17 2025
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Sat Jul 12 22:19:11 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top_sum_res -c top_sum_res
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v
-    Info (12023): Found entity 1: BCD File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top_sum_res.v
-    Info (12023): Found entity 1: top_sum_res File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top_sum_res.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top.v
-    Info (12023): Found entity 1: top File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top.v Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum_res_4b.v
-    Info (12023): Found entity 1: sum_res_4b File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum_res_4b.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum4b_estruc.v
-    Info (12023): Found entity 1: sum4b_estruc File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum4b_estruc.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum1b_estruc.v
-    Info (12023): Found entity 1: sum1b_estruc File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum1b_estruc.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/CF_Div.v
-    Info (12023): Found entity 1: CF_Div File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/CF_Div.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCDtoSSeg.v
-    Info (12023): Found entity 1: BCDtoSSeg File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCDtoSSeg.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at top.v(24): created implicit net for "fdivider" File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top.v Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file /users/lapt-torres/github-classroom/digital-electronics-unal/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/bcd.v
+    Info (12023): Found entity 1: BCD File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/lapt-torres/github-classroom/digital-electronics-unal/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top_sum_res.v
+    Info (12023): Found entity 1: top_sum_res File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top_sum_res.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/lapt-torres/github-classroom/digital-electronics-unal/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top.v
+    Info (12023): Found entity 1: top File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file /users/lapt-torres/github-classroom/digital-electronics-unal/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum_res_4b.v
+    Info (12023): Found entity 1: sum_res_4b File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum_res_4b.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/lapt-torres/github-classroom/digital-electronics-unal/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum4b_estruc.v
+    Info (12023): Found entity 1: sum4b_estruc File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum4b_estruc.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /users/lapt-torres/github-classroom/digital-electronics-unal/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum1b_estruc.v
+    Info (12023): Found entity 1: sum1b_estruc File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum1b_estruc.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/lapt-torres/github-classroom/digital-electronics-unal/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/cf_div.v
+    Info (12023): Found entity 1: CF_Div File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/CF_Div.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/lapt-torres/github-classroom/digital-electronics-unal/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/bcdtosseg.v
+    Info (12023): Found entity 1: BCDtoSSeg File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCDtoSSeg.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at top.v(24): created implicit net for "fdivider" File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top.v Line: 24
 Info (12127): Elaborating entity "top_sum_res" for the top level hierarchy
-Info (12128): Elaborating entity "sum_res_4b" for hierarchy "sum_res_4b:sr" File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top_sum_res.v Line: 25
-Info (12128): Elaborating entity "sum4b_estruc" for hierarchy "sum_res_4b:sr|sum4b_estruc:UUT" File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum_res_4b.v Line: 23
-Info (12128): Elaborating entity "sum1b_estruc" for hierarchy "sum_res_4b:sr|sum4b_estruc:UUT|sum1b_estruc:S0" File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum4b_estruc.v Line: 19
-Info (12128): Elaborating entity "top" for hierarchy "top:u_top" File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top_sum_res.v Line: 34
-Info (12128): Elaborating entity "BCD" for hierarchy "top:u_top|BCD:BCD" File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top.v Line: 25
-Warning (10230): Verilog HDL assignment warning at BCD.v(24): truncated value with size 32 to match size of target (4) File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 24
-Warning (10230): Verilog HDL assignment warning at BCD.v(29): truncated value with size 32 to match size of target (4) File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 29
-Info (12128): Elaborating entity "CF_Div" for hierarchy "top:u_top|CF_Div:fdiv" File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top.v Line: 30
-Warning (10230): Verilog HDL assignment warning at CF_Div.v(21): truncated value with size 32 to match size of target (19) File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/CF_Div.v Line: 21
-Info (12128): Elaborating entity "BCDtoSSeg" for hierarchy "top:u_top|BCDtoSSeg:BCDtoSSeg" File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top.v Line: 37
-Warning (10272): Verilog HDL Case Statement warning at BCDtoSSeg.v(25): case item expression covers a value already covered by a previous case item File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCDtoSSeg.v Line: 25
+Info (12128): Elaborating entity "sum_res_4b" for hierarchy "sum_res_4b:sr" File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top_sum_res.v Line: 25
+Info (12128): Elaborating entity "sum4b_estruc" for hierarchy "sum_res_4b:sr|sum4b_estruc:UUT" File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum_res_4b.v Line: 23
+Info (12128): Elaborating entity "sum1b_estruc" for hierarchy "sum_res_4b:sr|sum4b_estruc:UUT|sum1b_estruc:S0" File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/sum4b_estruc.v Line: 19
+Info (12128): Elaborating entity "top" for hierarchy "top:u_top" File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top_sum_res.v Line: 34
+Info (12128): Elaborating entity "BCD" for hierarchy "top:u_top|BCD:BCD" File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top.v Line: 25
+Warning (10230): Verilog HDL assignment warning at BCD.v(24): truncated value with size 32 to match size of target (4) File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 24
+Warning (10230): Verilog HDL assignment warning at BCD.v(29): truncated value with size 32 to match size of target (4) File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 29
+Info (12128): Elaborating entity "CF_Div" for hierarchy "top:u_top|CF_Div:fdiv" File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top.v Line: 30
+Warning (10230): Verilog HDL assignment warning at CF_Div.v(21): truncated value with size 32 to match size of target (19) File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/CF_Div.v Line: 21
+Info (12128): Elaborating entity "BCDtoSSeg" for hierarchy "top:u_top|BCDtoSSeg:BCDtoSSeg" File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top.v Line: 37
+Warning (10272): Verilog HDL Case Statement warning at BCDtoSSeg.v(25): case item expression covers a value already covered by a previous case item File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCDtoSSeg.v Line: 25
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "top:u_top|BCD:BCD|Div0" File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 29
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "top:u_top|BCD:BCD|Mod0" File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 24
-Info (12130): Elaborated megafunction instantiation "top:u_top|BCD:BCD|lpm_divide:Div0" File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 29
-Info (12133): Instantiated megafunction "top:u_top|BCD:BCD|lpm_divide:Div0" with the following parameter: File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 29
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "top:u_top|BCD:BCD|Div0" File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 29
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "top:u_top|BCD:BCD|Mod0" File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 24
+Info (12130): Elaborated megafunction instantiation "top:u_top|BCD:BCD|lpm_divide:Div0" File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 29
+Info (12133): Instantiated megafunction "top:u_top|BCD:BCD|lpm_divide:Div0" with the following parameter: File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 29
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_0jm.tdf
-    Info (12023): Found entity 1: lpm_divide_0jm File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/lpm_divide_0jm.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_0jm File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/lpm_divide_0jm.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_olh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_olh File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/sign_div_unsign_olh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_olh File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/sign_div_unsign_olh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_47f.tdf
-    Info (12023): Found entity 1: alt_u_div_47f File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/alt_u_div_47f.tdf Line: 27
+    Info (12023): Found entity 1: alt_u_div_47f File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/alt_u_div_47f.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
-    Info (12023): Found entity 1: add_sub_7pc File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/add_sub_7pc.tdf Line: 23
+    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/add_sub_7pc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
-    Info (12023): Found entity 1: add_sub_8pc File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/add_sub_8pc.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "top:u_top|BCD:BCD|lpm_divide:Mod0" File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 24
-Info (12133): Instantiated megafunction "top:u_top|BCD:BCD|lpm_divide:Mod0" with the following parameter: File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 24
+    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/add_sub_8pc.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "top:u_top|BCD:BCD|lpm_divide:Mod0" File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 24
+Info (12133): Instantiated megafunction "top:u_top|BCD:BCD|lpm_divide:Mod0" with the following parameter: File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/BCD.v Line: 24
     Info (12134): Parameter "LPM_WIDTHN" = "5"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_j9m.tdf
-    Info (12023): Found entity 1: lpm_divide_j9m File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/lpm_divide_j9m.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_j9m File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/lpm_divide_j9m.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_8kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_8kh File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/sign_div_unsign_8kh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_8kh File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/sign_div_unsign_8kh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_44f.tdf
-    Info (12023): Found entity 1: alt_u_div_44f File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/alt_u_div_44f.tdf Line: 27
+    Info (12023): Found entity 1: alt_u_div_44f File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/Quartus_2/db/alt_u_div_44f.tdf Line: 27
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "rst" File: /home/samuel/Documentos/Sem_6/Digital/lab3_2/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top_sum_res.v Line: 8
+    Warning (15610): No output dependent on input pin "rst" File: C:/Users/LAPT-TORRES/github-classroom/digital-electronics-UNAL/lab03-decodificador-bcd-7seg-2025-i-g6-e5/src/top_sum_res.v Line: 8
 Info (21057): Implemented 170 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 11 output pins
     Info (21061): Implemented 148 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 390 megabytes
-    Info: Processing ended: Thu Jul  3 13:40:28 2025
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Peak virtual memory: 4742 megabytes
+    Info: Processing ended: Sat Jul 12 22:19:26 2025
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:33
 
 

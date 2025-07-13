@@ -66,12 +66,7 @@ La salida incluye un bit de acarreo o préstamo ($C_{out}$) y un flag de overflo
 
 
 
-## 3. Diagramas
-
-
-
-
-## 4. Simulaciones 
+## 3. Simulaciones 
 
 Para implementar el módulo top_sum_res, encargado de la visualización y operación aritmética del sistema, se presentaron varios inconvenientes antes de llegar a la versión final. Uno de los primeros errores fue no considerar adecuadamente los casos necesarios en el módulo BCDtoSSeg para interpretar correctamente la entrada cuando se activaba el modo de resta. En una simulación inicial realizada en GTKWave, se ingresó únicamente el bit de acarreo/salida $C_{out}$ proveniente del sumador, junto con las unidades y decenas directamente al módulo BCD. Sin embargo, esto solo permitía visualizar sumas correctamente, ya que el bit de Cout, que indica el signo en el caso de una resta, no estaba siendo interpretado apropiadamente.
 
@@ -82,8 +77,15 @@ La primera simulación funcional, sin el uso de Quartus, reflejó esta nueva ló
 ![Simulación](img/Screenshot%20from%202025-07-03%2000-12-32.png)
 
 
+Se agrega la variable new in, el cual pregunta si el selector es 1 o 0, en dado caso para mirar el signo del primero, y con esto se pregunta tambien la existencia del valor de carry in, con esto si es negativo, se realiza un complemento a dos para la entrada in, y con esto se le suma un ultimo valor, 
+Si el input 4 da 0, carry out es = 0, es positivo, sencillamente manda el valor directamente el valor de la magnitud, pero como se mantiene un uno en el ultimo bit, nos afecta el valor, debido a eso, se toman los 4 primeros bits, se concatena un 0 en el ultimo
+En el caso del select, si es suma 
 ## 5. Implementación
 
+
+<a href="img/VIDEO.mp4">
+  <img src="img/ss.jpg" width="300"/>
+</a>
 
 ## Conclusiones
 

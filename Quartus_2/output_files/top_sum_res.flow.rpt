@@ -1,6 +1,6 @@
 Flow report for top_sum_res
-Thu Jul  3 13:40:42 2025
-Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Sat Jul 12 22:19:41 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -21,43 +21,43 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2025  Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
-the Altera IP License Agreement, or other applicable license
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
-Altera and sold by Altera or its authorized distributors.  Please
-refer to the Altera Software License Subscription Agreements 
-on the Quartus Prime software download page.
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Flow Summary                                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Jul  3 13:40:42 2025           ;
-; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
-; Revision Name                      ; top_sum_res                                     ;
-; Top-level Entity Name              ; top_sum_res                                     ;
-; Family                             ; Cyclone IV E                                    ;
-; Device                             ; EP4CE10E22C8                                    ;
-; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 149 / 10,320 ( 1 % )                            ;
-;     Total combinational functions  ; 147 / 10,320 ( 1 % )                            ;
-;     Dedicated logic registers      ; 31 / 10,320 ( < 1 % )                           ;
-; Total registers                    ; 31                                              ;
-; Total pins                         ; 22 / 92 ( 24 % )                                ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0 / 423,936 ( 0 % )                             ;
-; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                                  ;
-; Total PLLs                         ; 0 / 2 ( 0 % )                                   ;
-+------------------------------------+-------------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Flow Summary                                                                        ;
++------------------------------------+------------------------------------------------+
+; Flow Status                        ; Successful - Sat Jul 12 22:19:41 2025          ;
+; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                      ; top_sum_res                                    ;
+; Top-level Entity Name              ; top_sum_res                                    ;
+; Family                             ; Cyclone IV E                                   ;
+; Device                             ; EP4CE10E22C8                                   ;
+; Timing Models                      ; Final                                          ;
+; Total logic elements               ; 149 / 10,320 ( 1 % )                           ;
+;     Total combinational functions  ; 147 / 10,320 ( 1 % )                           ;
+;     Dedicated logic registers      ; 31 / 10,320 ( < 1 % )                          ;
+; Total registers                    ; 31                                             ;
+; Total pins                         ; 22 / 92 ( 24 % )                               ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0 / 423,936 ( 0 % )                            ;
+; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                                 ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                                  ;
++------------------------------------+------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -65,7 +65,7 @@ on the Quartus Prime software download page.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/03/2025 13:40:17 ;
+; Start date & time ; 07/12/2025 22:19:11 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; top_sum_res         ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ on the Quartus Prime software download page.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 263898032167123.175156801731210        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 57827273403562.175237675106316         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -101,26 +101,26 @@ on the Quartus Prime software download page.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 374 MB              ; 00:00:24                           ;
-; Fitter               ; 00:00:06     ; 1.0                     ; 668 MB              ; 00:00:06                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 343 MB              ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 428 MB              ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 590 MB              ; 00:00:01                           ;
-; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:34                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4737 MB             ; 00:00:33                           ;
+; Fitter               ; 00:00:06     ; 1.0                     ; 5211 MB             ; 00:00:06                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4680 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4736 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4634 MB             ; 00:00:01                           ;
+; Total                ; 00:00:25     ; --                      ; --                  ; 00:00:43                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Flow OS Summary                                                                 ;
-+----------------------+------------------+---------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name ; OS Version ; Processor type ;
-+----------------------+------------------+---------+------------+----------------+
-; Analysis & Synthesis ; samuel-K401UQ    ; Ubuntu  ; 24         ; x86_64         ;
-; Fitter               ; samuel-K401UQ    ; Ubuntu  ; 24         ; x86_64         ;
-; Assembler            ; samuel-K401UQ    ; Ubuntu  ; 24         ; x86_64         ;
-; Timing Analyzer      ; samuel-K401UQ    ; Ubuntu  ; 24         ; x86_64         ;
-; EDA Netlist Writer   ; samuel-K401UQ    ; Ubuntu  ; 24         ; x86_64         ;
-+----------------------+------------------+---------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-UQ4CQD9  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-UQ4CQD9  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-UQ4CQD9  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-UQ4CQD9  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-UQ4CQD9  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------

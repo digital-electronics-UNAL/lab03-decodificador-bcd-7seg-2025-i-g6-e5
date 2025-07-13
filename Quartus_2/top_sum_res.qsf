@@ -60,14 +60,6 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name VERILOG_FILE ../src/BCD.v
-set_global_assignment -name VERILOG_FILE ../src/top_sum_res.v
-set_global_assignment -name VERILOG_FILE ../src/top.v
-set_global_assignment -name VERILOG_FILE ../src/sum_res_4b.v
-set_global_assignment -name VERILOG_FILE ../src/sum4b_estruc.v
-set_global_assignment -name VERILOG_FILE ../src/sum1b_estruc.v
-set_global_assignment -name VERILOG_FILE ../src/CF_Div.v
-set_global_assignment -name VERILOG_FILE ../src/BCDtoSSeg.v
 set_location_assignment PIN_68 -to A[3]
 set_location_assignment PIN_67 -to A[2]
 set_location_assignment PIN_66 -to A[1]
@@ -89,4 +81,13 @@ set_location_assignment PIN_132 -to an[2]
 set_location_assignment PIN_129 -to an[1]
 set_location_assignment PIN_128 -to an[0]
 set_location_assignment PIN_23 -to clk
+set_global_assignment -name VERILOG_FILE ../src/BCD.v
+set_global_assignment -name VERILOG_FILE ../src/top_sum_res.v
+set_global_assignment -name VERILOG_FILE ../src/top.v
+set_global_assignment -name VERILOG_FILE ../src/sum_res_4b.v
+set_global_assignment -name VERILOG_FILE ../src/sum4b_estruc.v
+set_global_assignment -name VERILOG_FILE ../src/sum1b_estruc.v
+set_global_assignment -name VERILOG_FILE ../src/CF_Div.v
+set_global_assignment -name VERILOG_FILE ../src/BCDtoSSeg.v
+set_location_assignment PIN_90 -to rst
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
