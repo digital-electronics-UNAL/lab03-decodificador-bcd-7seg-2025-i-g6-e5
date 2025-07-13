@@ -4,6 +4,11 @@
 
 ## Integrantes 
 
+[Samuel David Negrete Lancheros](https://github.com/Snegunal)
+
+[Alessandra Quintero Rois](https://github.com/Alequira)
+
+[Jorge Alejandro Torres Gutierrez](https://github.com/DonTorres01)
 
 ## Informe
 
@@ -16,7 +21,9 @@ Indice:
 5. [Implementación](#5-implementación)
 6. [Conclusiones](#conclusiones)
 
-## 1. Diseño implementado
+## 1. Descripción
+
+## 2. Diseño implementado
 
 ### Divisor de Frecuencia
 
@@ -29,6 +36,16 @@ Este módulo recibe una entrada binaria (inp) de hasta 5 bits (valor entre 0 y 3
 ### BCD a 7 segmentos
 
 Este módulo transforma un valor BCD (0 a 9) en las señales que deben activarse para encender los segmentos correctos del display de 7 segmentos. Utiliza una instrucción case para cada valor de entrada del 0 al 9. La salida out es de 7 bits, cada uno representa un segmento (a, b, c, ..., g).
+
+### Sumador (1-bit)
+
+Este módulo constituye la unidad básica del sumador de 4 bits, y se conecta en cascada con otros sumadores de 1 bit para formar sistemas aritméticos de mayor tamaño.
+
+Cada sumador de 1 bit realiza la operación:
+
+- S = A ⊕ B ⊕ Cin  
+- Cout = (A ∧ B) ∨ (Cin ∧ (A ⊕ B))
+
 
 ### Sumador restador (4-bits)
 
@@ -44,11 +61,12 @@ La salida incluye un bit de acarreo o préstamo ($C_{out}$) y un flag de overflo
 
 ![Sumador-Restador](img/sumres4.png)
 
-## 2. Descripción
 
 
 
 ## 3. Diagramas
+
+
 
 
 ## 4. Simulaciones 
