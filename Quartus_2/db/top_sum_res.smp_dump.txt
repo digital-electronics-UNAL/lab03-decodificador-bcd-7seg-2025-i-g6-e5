@@ -1,6 +1,0 @@
-
-State Machine - |top_sum_res|top:u_top|BCD:BCD|algo
-Name algo.00 algo.10 algo.01 
-algo.00 0 0 0 
-algo.01 1 0 1 
-algo.10 1 1 0 

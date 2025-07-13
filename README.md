@@ -23,6 +23,8 @@ Indice:
 
 ## 1. Descripción
 
+Este proyecto implementa un sistema digital capaz de realizar operaciones aritméticas (suma y resta) entre dos números de 4 bits, mostrando el resultado en un display de 7 segmentos utilizando conversión binaria a decimal (BCD) y multiplexado. El enfoque principal está en la traducción de valores binarios (de hasta 5 bits), provenientes de operaciones aritméticas, a su equivalente decimal, y su posterior representación visual clara y eficiente.. El diseño es completamente modular y se construye a partir de componentes básicos desarrollados en hardware descriptivo, facilitando su comprensión y reutilización.
+
 ## 2. Diseño implementado
 
 ### Divisor de Frecuencia
