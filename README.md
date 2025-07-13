@@ -35,6 +35,15 @@ Este módulo toma una señal de reloj (clk) de alta frecuencia y la divide por u
 
 Este módulo recibe una entrada binaria (inp) de hasta 5 bits (valor entre 0 y 31) y la convierte en valores BCD de un solo dígito. Utiliza un contador c para seleccionar dinámicamente cuál dígito mostrar en el display. Se usa el reloj dividido (clk2) para ir cambiando en cada flanco (postedge) entre digitos (unidades, decenas, ...); según el valor de c, calcula que digito corresponde, para este caso unidades: inp % 10, decenas: (inp - inp % 10) / 10. Así permite multiplexar varios dígitos con un solo módulo, usando solo una señal de control, ahorrando recursos lógicos y facilitando la lectura en pantallas múltiples.
 
+
+Una de los elementos claves en este modulo es el wire new_in, ya que esta instrucción tiene como objetivo, dependiendo de los valores de Select[1:0] y Carry Out (inp[4]) -los cuales determinan si la operación del sistema es suma o resta, y si el valor del número es positivo o negativo, respectivamente- el poder preparar la salida inp para ser convertida y mostrada correctamente en el display.
+
+La logìca detras de la variable new in, la cual nos representa el valor absoluto a mostrar, cuenta con 3 casos fundamentales:
+
+- Para el caso donde el Sel == 1 y el inp[4]==0, se entiende un valor negativo, donde para la salida se le aplica el complemento a dos al inp[3:0] y se concatena un 0 para mantener la mangnitud.
+- Para el caso donde el Sel == 1 y el inp[4] == 1, como el valor del numero es positivo, se toma directamente la magnitud del inp[3:0], y se le concatena un 0 para el bit más significativo.
+- Para el ultimo caso, donde el Sel == 0, se utiliza el valor del inp[3:0] tal como esta, ya que no es necesaria la conversión.
+
 ### BCD a 7 segmentos
 
 Este módulo transforma un valor BCD (0 a 9) en las señales que deben activarse para encender los segmentos correctos del display de 7 segmentos. Utiliza una instrucción case para cada valor de entrada del 0 al 9. La salida out es de 7 bits, cada uno representa un segmento (a, b, c, ..., g).
@@ -76,12 +85,13 @@ La primera simulación funcional, sin el uso de Quartus, reflejó esta nueva ló
 
 ![Simulación](img/Screenshot%20from%202025-07-03%2000-12-32.png)
 
-
-Se agrega la variable new in, el cual pregunta si el selector es 1 o 0, en dado caso para mirar el signo del primero, y con esto se pregunta tambien la existencia del valor de carry in, con esto si es negativo, se realiza un complemento a dos para la entrada in, y con esto se le suma un ultimo valor, 
-Si el input 4 da 0, carry out es = 0, es positivo, sencillamente manda el valor directamente el valor de la magnitud, pero como se mantiene un uno en el ultimo bit, nos afecta el valor, debido a eso, se toman los 4 primeros bits, se concatena un 0 en el ultimo
-En el caso del select, si es suma 
 ## 5. Implementación
 
+Para la implementación en la FPGA, ya con la logíca anteriormente mencionada para cada uno de los modulos, se procedio a la asignación de los pines.
+
+![Implementación](img/pp.jpg)
+
+Para finalmente, tener la implementación fisica, donde en este caso se realizaron diversas pruebas, principalmente para poder mostrar el funcionamiento del signo, se realiza la suma y resta entre 0 y 15, donde se puede apreciar el cambio del signo y la suma entre varios valores.
 
 <a href="img/VIDEO.mp4">
   <img src="img/ss.jpg" width="300"/>
