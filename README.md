@@ -99,6 +99,14 @@ Para finalmente, tener la implementación fisica, donde en este caso se realizar
 
 ## Conclusiones
 
+1. **Diseño funcional del sistema de visualización aritmética:**  
+   Se logró implementar de manera satisfactoria un sistema digital capaz de realizar operaciones aritméticas (suma y resta) entre dos números de 4 bits, visualizando correctamente el resultado en displays de 7 segmentos. Esto se cumplió mediante el desarrollo de una arquitectura modular que integra conversión BCD, multiplexado y control de segmentos.
+
+2. **Comprensión y adaptación al tipo de display:**  
+   Se tuvo en cuenta el tipo de display utilizado (ánodo común) para definir correctamente los niveles lógicos activos en las salidas del decodificador BCD a 7 segmentos, así como la lógica de selección de dígitos. Este paso fue esencial para garantizar una visualización adecuada del resultado en la tarjeta de desarrollo.
+
+3. **Conversión binario a decimal con manejo de signo:**  
+   Se desarrolló correctamente un sistema que transforma números binarios de hasta 5 bits en una representación decimal de dos dígitos (unidades y decenas), y adicionalmente un bit de signo. Este proceso requirió la comprensión del complemento a dos para la visualización de resultados negativos, diferenciando entre operaciones de suma y resta, y extrayendo la magnitud cuando era necesario.
 
 
 
