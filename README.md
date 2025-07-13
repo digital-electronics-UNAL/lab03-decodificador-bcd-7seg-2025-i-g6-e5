@@ -79,11 +79,9 @@ La salida incluye un bit de acarreo o préstamo ($C_{out}$) y un flag de overflo
 
 Para implementar el módulo top_sum_res, encargado de la visualización y operación aritmética del sistema, se presentaron varios inconvenientes antes de llegar a la versión final. Uno de los primeros errores fue no considerar adecuadamente los casos necesarios en el módulo BCDtoSSeg para interpretar correctamente la entrada cuando se activaba el modo de resta. En una simulación inicial realizada en Verilog y visualizada con GTKWave, se ingresó únicamente el bit de acarreo/salida $C_{out}$ proveniente del sumador, junto con las unidades y decenas directamente al módulo BCD. Sin embargo, esto solo permitía visualizar sumas correctamente, ya que el bit de Cout, que indica el signo en el caso de una resta, no estaba siendo interpretado apropiadamente.
 
-Cuando se activaba la operación de resta, se esperaba que $C_{out} = 0$ representara un número negativo. Para reflejar esto en la visualización, fue necesario ajustar la lógica del módulo BCD y considerar el complemento a dos para los resultados negativos. Se rediseñó entonces el sistema para que el muestreo dinámico del display incluyera tres dígitos: las unidades, las decenas, y un signo representado mediante un segmento adicional que se activa si el número es negativo (cambiando para el anodo la logica de 0).
+Cuando se activa la operación de resta, en caso de que $C_{out} = 0$ la salida representa un número negativo, pero en caso de que $C_{out} = 1$ El resultado era correcto sin embargo habia que cambiar ese 1 por un 0 para que BCD interpretara correctamente el número por lo tanto fue necesario ajustar la lógica del módulo BCD y considerar el complemento a dos para los resultados negativos. Adicionalmente se rediseñó el sistema para que el muestreo dinámico del display incluyera tres dígitos: las unidades, las decenas, y un signo representado mediante un segmento adicional que se activa si el número es negativo (cambiando para el anodo la logica de 0).
 
-La primera simulación funcional, sin el uso de Quartus, reflejó esta nueva lógica incorporando el signo sin la vizualización correcta para operaciones tanto de suma como de resta, parecia correcto pero no se veia en la FPGA.
-
-![Simulación](img/Screenshot%20from%202025-07-03%2000-12-32.png)
+![Simulación](img/Simulacion.png)
 
 ## 5. Implementación
 
